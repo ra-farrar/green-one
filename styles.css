@@ -964,6 +964,13 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
     min-height: 100vh;
     padding: clamp(16px, 5vw, 32px);
   }
+.master-column.master-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 1.8vw, 18px);
+  --resume-card-pad: clamp(18px, 3vw, 28px);
+}
 
   .master-section {
     background: var(--elev);
@@ -991,6 +998,44 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
     gap: clamp(16px, 3vw, 28px);
     height: 100%;
   }
+.resume-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: clamp(6px, 1vw, 10px);
+  align-self: flex-start;
+  height: auto;
+  padding: var(--resume-card-pad);
+  position: relative;
+  border-radius: 16px;
+  border: 2px solid var(--border);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--elev) 85%, transparent) 0%, var(--elev) 100%);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  letter-spacing: -0.06em;
+}
+
+.subhead-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--elev) 88%, transparent);
+  padding: var(--resume-card-pad);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  color: var(--fg);
+}
+
+.subhead-card__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(10px, 2vw, 18px);
+}
 
   .master-column {
     background: transparent;
@@ -1028,6 +1073,28 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
     letter-spacing: -0.06em;
   }
+.subhead-card__box {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4px, 0.6vw, 8px);
+  align-items: center;
+  width: min(480px, 100%);
+}
+
+.subhead-card__line {
+  margin: 0;
+  --subhead-line-min-size: 22px;
+  --subhead-line-max-size: 52px;
+  --subhead-line-size: clamp(var(--subhead-line-min-size), 4vw, var(--subhead-line-max-size));
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  font-family: "Inter Tight", system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 1.05;
+  font-size: var(--subhead-line-size);
+}
 
   .subhead-card {
     display: flex;
