@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ryan Farrar</title>
+
+    <!-- Inter Tight -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Angkor -->
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-viewport="mobile">
+    <div class="master-shell" aria-label="Master section">
+      <div class="master-section">
+        <div class="master-scroll">
+          <div class="master-grid">
+            <div class="master-column master-resume" aria-label="master-resume">
+              <div class="resume-card" aria-label="Name display">
+                <span class="resume-card__line resume-card__line--top">RYAN</span>
+                <span class="resume-card__line resume-card__line--bottom">FARRAR</span>
+              </div>
+            </div>
+            <div class="master-column master-content" aria-label="master-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page wrapper keeps max-width and padding consistent -->
+    <div class="page">
+
+      <!-- 1) HEADER (baseline) -->
+      <header
+        id="header"
+        class="section section--header section--box full-bleed header-fill"
+        style="--section-fg:var(--fg); --section-radius:12px;"
+      >
+        <div class="header-inner">
+          <div class="header-measure">
+            <h1 id="headerTitle" class="header-title" aria-label="Ryan Farrar">
+              <span id="headerText" class="header-text">
+                <span class="header-text__word">RYAN</span>
+                <span class="header-text__word">FARRAR</span>
+              </span>
+            </h1>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2) SUBHEAD (UPDATED: arrow + responsive text box, scoped) -->
+      <section id="subhead" class="section section--box"
+        style="--section-fg:var(--fg); --section-radius:16px;">
+        <div class="subhead-row">
+          <div class="subhead-arrow" aria-hidden="true">
+            <svg class="subhead-arrow__svg" viewBox="0 0 114 113" role="presentation" xmlns="http://www.w3.org/2000/svg">
+              <rect width="22" height="83" fill="currentColor" />
+              <rect x="69" y="61" width="22" height="69" transform="rotate(90 69 61)" fill="currentColor" />
+              <path d="M114 72L67.5 107.507L67.5 36.493L114 72Z" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="subhead-box">
+            <p class="subhead-line subhead-line--1">MARKETING LEADER</p>
+            <p class="subhead-line subhead-line--2">BASED IN NEW YORK CITY</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3) ANIMATION (baseline) -->
+      <section id="animation" class="section"
+        style="--section-bg:transparent; --section-fg:var(--fg);">
+        <div class="animation-shell" aria-live="polite">
+          <div id="animationContainer" class="animation-stage" role="presentation"></div>
+        </div>
+      </section>
+
+      <!-- 3B) COLLAGE (empty) -->
+      <section id="collage" class="section"
+        style="--section-bg:transparent; --section-fg:var(--fg);">
+        <div class="collage__frame" aria-label="Collage container"></div>
+      </section>
+
+      <!-- 4) MARQUEE (baseline) -->
+      <section id="marquee" class="section section--marquee" aria-label="Marquee">
+        <div class="marquee" role="marquee" aria-label="Experience marquee">
+          <div class="marquee__track">
+            <div class="marquee__row">
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+            </div>
+            <div class="marquee__row" aria-hidden="true">
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+              <span class="marquee__item marquee__item--word">EXPERIENCE</span>
+              <span class="marquee__item marquee__item--icon" aria-hidden="true">◈</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience-header"
+        class="section section--box"
+        aria-label="Experience header"
+        style="--section-fg:var(--fg); --section-radius:16px; padding-block:0;"
+        style="--section-fg:var(--fg); --section-radius:16px;"
+      >
+        <div class="block-title block-title--skills">◈ EXPERIENCE ◈</div>
+      </section>
+
+      <!-- MOBILE-ONLY TIMELINE -->
+      <section
+        id="timeline"
+        class="section section--box section--timeline"
+        aria-label="Career timeline"
+        style="--section-fg:var(--fg);"
+      >
+        <div class="timeline-inner">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2024 -</span>
+                  <span class="timeline-date__line">Current</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">
+                    <span class="timeline-role__line">Sr. Product Marketing Manager,</span>
+                    <span class="timeline-role__line">US Prime Paid Media</span>
+                  </p>
+                  <p class="timeline-badge">Amazon</p>
+                  <p class="timeline-company">Lead end-to-end Paid Media strategy for Amazon Prime, defining audience, channel and investment strategies.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2023 -</span>
+                  <span class="timeline-date__line">2024</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">
+                    <span class="timeline-role__line">Product Marketing Manager,</span>
+                    <span class="timeline-role__line">US Prime Paid Media</span>
+                  </p>
+                  <p class="timeline-badge">Amazon</p>
+                  <p class="timeline-company">Promoted to Senior Product Marketing Manager in Nov 2024.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2022 -</span>
+                  <span class="timeline-date__line">2023</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">
+                    <span class="timeline-role__line">Product Marketing Manager,</span>
+                    <span class="timeline-role__line">Prime Access</span>
+                  </p>
+                  <p class="timeline-badge">Amazon</p>
+                  <p class="timeline-company">Developed, launched, and scaled integrated multi-channel go-to-market strategies for the Prime Access membership segment.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2020 -</span>
+                  <span class="timeline-date__line">2022</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">
+                    <span class="timeline-role__line">Product &amp; Brand</span>
+                    <span class="timeline-role__line">Marketing Manager</span>
+                  </p>
+                  <p class="timeline-badge">The Wall Street Journal</p>
+                  <p class="timeline-company">Drove brand strategy, visual identity development, and integrated marketing campaigns for 40+ WSJ Live Events.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2019 -</span>
+                  <span class="timeline-date__line">2020</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">Growth Marketing Manager</p>
+                  <p class="timeline-badge">The Wall Street Journal</p>
+                  <p class="timeline-company">Owned marketing strategy and execution for WSJ Pro, generating a high-quality sales pipeline through targeted lead acquisition.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2018 -</span>
+                  <span class="timeline-date__line">2019</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">
+                    <span class="timeline-role__line">Team Lead,</span>
+                    <span class="timeline-role__line">Digital Marketing Strategy</span>
+                  </p>
+                  <p class="timeline-badge">Thomas</p>
+                  <p class="timeline-company">Lead and mentored a team of Marketing Strategists and Project Managers to ensure success of client marketing programs.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2016 -</span>
+                  <span class="timeline-date__line">2018</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">Digital Marketing Strategist</p>
+                  <p class="timeline-badge">Thomas</p>
+                  <p class="timeline-company">Managed digital inbound marketing campaigns for multiple B2B clients, driving brand awareness and building sales pipelines.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2015 -</span>
+                  <span class="timeline-date__line">2016</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">Jr. Digital Marketing Strategist</p>
+                  <p class="timeline-badge">Thomas</p>
+                  <p class="timeline-company">Executed digital marketing campaigns for multiple B2B clients in conjunction with strategy team.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2013 -</span>
+                  <span class="timeline-date__line">2015</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">Editorial Content Analyst</p>
+                  <p class="timeline-badge">Thomas</p>
+                  <p class="timeline-company">Conducted research on industrial suppliers and created detailed product and company profiles.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-column timeline-column--date">
+                <div class="timeline-date">
+                  <span class="timeline-date__line">2013 -</span>
+                  <span class="timeline-date__line">2015</span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--axis">
+                <div class="timeline-axis" aria-hidden="true">
+                  <span class="timeline-dot"></span>
+                </div>
+              </div>
+              <div class="timeline-column timeline-column--role">
+                <div class="timeline-details">
+                  <p class="timeline-role">Copywriter</p>
+                  <p class="timeline-badge">Trusty Tails Pet Care</p>
+                  <p class="timeline-company">Researched, wrote, and edited weekly blog content using SEO best practices to drive traffic and increase brand awareness.</p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section
+        id="skills-header"
+        class="section section--box"
+        aria-label="Skills header"
+        style="--section-fg:var(--fg); --section-radius:16px; padding-block:0;"
+        style="--section-fg:var(--fg); --section-radius:16px;"
+      >
+        <div class="block-title block-title--skills">◈ SKILLS ◈</div>
+      </section>
+
+      <!-- MOBILE-ONLY SKILLS -->
+      <section
+        id="skills"
+        class="section section--box section--skills"
+        aria-label="Skills"
+        style="--section-fg:var(--fg);"
+      >
+        <div class="skills-chips" role="list">
+          <button class="skill-chip" role="listitem">Go-To-Market-Strategy</button>
+          <button class="skill-chip" role="listitem">B2C</button>
+          <button class="skill-chip" role="listitem">B2B</button>
+          <button class="skill-chip" role="listitem">Paid Display</button>
+          <button class="skill-chip" role="listitem">Paid Social</button>
+          <button class="skill-chip" role="listitem">Email</button>
+          <button class="skill-chip" role="listitem">Cross-Channel Marketing</button>
+          <button class="skill-chip" role="listitem">Push</button>
+          <button class="skill-chip" role="listitem">Marketing Analytics</button>
+          <button class="skill-chip" role="listitem">Budget Management</button>
+          <button class="skill-chip" role="listitem">Campaign Optimization</button>
+          <button class="skill-chip" role="listitem">Brand Strategy</button>
+        </div>
+      </section>
+
+      <!-- 5) EXPERIENCE (baseline) -->
+      <section id="experience" class="section"
+        style="--section-bg:transparent; --section-fg:var(--fg);">
+        <div id="experienceMount"></div>
+      </section>
+
+      <!-- 6) APPS (baseline) -->
+      <section id="apps" class="section"
+        style="--section-bg:transparent; --section-fg:var(--fg);">
+        <div class="block-title">apps</div>
+        <div class="grid grid--apps">
+          <figure class="app">
+            <img src="https://placehold.co/600x400" alt="App 1" />
+            <figcaption>App 1</figcaption>
+          </figure>
+          <figure class="app">
+            <img src="https://placehold.co/600x400" alt="App 2" />
+            <figcaption>App 2</figcaption>
+          </figure>
+          <figure class="app">
+            <img src="https://placehold.co/600x400" alt="App 3" />
+            <figcaption>App 3</figcaption>
+          </figure>
+          <figure class="app">
+            <img src="https://placehold.co/600x400" alt="App 4" />
+            <figcaption>App 4</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 7) CTA (baseline) -->
+      <section id="cta" class="section section--cta"
+        style="--section-fg:var(--fg); --section-radius:12px;">
+        <a class="btn btn--primary" href="mailto:ryan.a.farrar@gmail.com">CONTACT</a>
+      </section>
+
+      <!-- 8) CONTACT (baseline) -->
+      <section id="contact" class="section"
+        style="--section-bg:transparent; --section-fg:var(--fg);">
+        <div class="grid grid--contact">
+          <a class="btn btn--ghost" href="#" rel="noopener">LinkedIn</a>
+          <a class="btn btn--ghost" href="#" rel="noopener">Instagram</a>
+          <a class="btn btn--ghost" href="#" rel="noopener">Spotify</a>
+          <a class="btn btn--ghost" href="#" rel="noopener">Github</a>
+        </div>
+      </section>
+
+      <!-- 8b) CONTACT ICONS -->
+      <section id="contact-icons" class="section"
+        style="--section-bg:transparent; --section-fg:var(--fg);">
+        <div class="grid grid--contact grid--contact-icons">
+          <a
+            class="contact-icon-link"
+            href="https://www.linkedin.com/in/ryanafarrar/"
+            rel="noopener"
+          >
+            <img
+              class="contact-icon"
+              src="icons/li-white.svg"
+              alt="LinkedIn"
+              data-light-src="icons/li-white.svg"
+              data-dark-src="icons/li-black.svg"
+            />
+          </a>
+          <a
+            class="contact-icon-link"
+            href="https://github.com/ra-farrar"
+            rel="noopener"
+          >
+            <img
+              class="contact-icon"
+              src="icons/gh-white.svg"
+              alt="GitHub"
+              data-light-src="icons/gh-white.svg"
+              data-dark-src="icons/gh-black.svg"
+            />
+          </a>
+          <a
+            class="contact-icon-link"
+            href="https://www.instagram.com/ra_farrar/"
+            rel="noopener"
+          >
+            <img
+              class="contact-icon"
+              src="icons/ig-white.svg"
+              alt="Instagram"
+              data-light-src="icons/ig-white.svg"
+              data-dark-src="icons/ig-black.svg"
+            />
+          </a>
+          <a
+            class="contact-icon-link"
+            href="https://open.spotify.com/user/d26zap8cfhg4h1mls8h7l39bu"
+            rel="noopener"
+          >
+            <img
+              class="contact-icon"
+              src="icons/sp-white.svg"
+              alt="Spotify"
+              data-light-src="icons/sp-white.svg"
+              data-dark-src="icons/sp-black.svg"
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- 9) LINE (baseline) -->
+      <div id="line" class="divider" role="separator" aria-label="Section divider"></div>
+
+      <!-- 10) FOOTER (baseline) -->
+      <footer id="footer" class="section"
+        style="--section-bg:transparent; --section-fg:var(--fg-muted);">
+        <p class="body">Ryan Anthony Farrar<br> 2025 ©<br> All Rights Reserved<br> Made with GitHub & Codex</p>
+        <img
+          id="footerLogo"
+          class="footer-logo"
+          src="logo-black.svg"
+          alt="Ryan Farrar logo"
+        />
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
