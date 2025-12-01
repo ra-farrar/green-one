@@ -1003,6 +1003,27 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   min-width: 0;
 }
 
+.master-resume__contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(6px, 1.2vw, 12px);
+}
+
+.master-resume__contact .grid--contact-icons {
+  width: 100%;
+  gap: clamp(10px, 2vw, 14px);
+}
+
+.master-resume__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 1.8vw, 14px);
+  margin-top: clamp(8px, 1.5vw, 16px);
+  text-align: center;
+}
+
 .resume-card {
   display: flex;
   flex-direction: column;
