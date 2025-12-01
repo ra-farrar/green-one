@@ -196,12 +196,17 @@ refreshViewportMode();
 // ========== Theme Handling (Light/Dark toggle only) ==========
 const root = document.documentElement;
 const toggle = document.getElementById('themeToggle');
-const footerLogo = document.getElementById('footerLogo');
+const footerLogos = document.querySelectorAll('.footer-logo');
 const THEME_KEY = 'theme-mode';
 
 function updateFooterLogo(mode) {
-  if (!footerLogo) return;
-  footerLogo.src = mode === 'dark' ? 'logo-white.svg' : 'logo-black.svg';
+  if (!footerLogos.length) return;
+  const nextSrc = mode === 'dark' ? 'logo-white.svg' : 'logo-black.svg';
+  footerLogos.forEach((logo) => {
+    if (logo.getAttribute('src') !== nextSrc) {
+      logo.setAttribute('src', nextSrc);
+    }
+  });
 }
 
 function updateContactIcons(mode) {
