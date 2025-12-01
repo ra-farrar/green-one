@@ -1035,6 +1035,7 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   padding: var(--resume-card-pad);
   position: relative;
   margin-top: clamp(10px, 1.6vw, 18px);
+  width: min(100%, 380px);
   border-radius: 14px;
   border: 1.5px solid var(--border);
   background: linear-gradient(180deg, color-mix(in srgb, var(--elev) 90%, transparent) 0%, var(--elev) 100%);
@@ -1070,16 +1071,16 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 }
 
 .subhead-element__line--top {
-  --subhead-line-top-min: 18px;
+  --subhead-line-top-min: 15px;
   --subhead-line-top-max: 36px;
-  font-size: clamp(var(--subhead-line-top-min), 3.4vw, var(--subhead-line-top-max));
+  font-size: clamp(var(--subhead-line-top-min), 2.7vw, var(--subhead-line-top-max));
   padding-bottom: 0;
 }
 
 .subhead-element__line--bottom {
-  --subhead-line-bottom-min: 16px;
+  --subhead-line-bottom-min: 14px;
   --subhead-line-bottom-max: 30px;
-  font-size: clamp(var(--subhead-line-bottom-min), 3vw, var(--subhead-line-bottom-max));
+  font-size: clamp(var(--subhead-line-bottom-min), 2.4vw, var(--subhead-line-bottom-max));
 }
 
 .resume-card__line--top {
