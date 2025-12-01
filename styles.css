@@ -204,6 +204,7 @@ html[data-debug="1"] #timeline .timeline-column--role { outline:2px dashed rgba(
 html[data-debug="1"] .master-section { outline: 2px dashed rgba(var(--ol-blue), .9); }
 html[data-debug="1"] .master-grid { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 4px; }
 html[data-debug="1"] .resume-card { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
+html[data-debug="1"] .subhead-element { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
 html[data-debug="1"] .resume-card::before {
   content: "";
   position: absolute;
@@ -213,6 +214,30 @@ html[data-debug="1"] .resume-card::before {
   pointer-events: none;
 }
 html[data-debug="1"] .resume-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--ol-purple), .18) 0%,
+    rgba(var(--ol-purple), .18) var(--resume-card-pad),
+    transparent var(--resume-card-pad),
+    transparent calc(100% - var(--resume-card-pad)),
+    rgba(var(--ol-purple), .18) calc(100% - var(--resume-card-pad)),
+    rgba(var(--ol-purple), .18) 100%
+  );
+}
+html[data-debug="1"] .subhead-element::before {
+  content: "";
+  position: absolute;
+  inset: var(--resume-card-pad);
+  border: 2px dashed rgba(var(--ol-blue), .85);
+  border-radius: 10px;
+  pointer-events: none;
+}
+html[data-debug="1"] .subhead-element::after {
   content: "";
   position: absolute;
   inset: 0;
