@@ -230,6 +230,9 @@ html[data-debug="1"] .resume-card::after {
 }
 html[data-debug="1"] .master-column.master-resume { outline: 2px dashed rgba(var(--ol-purple), .9); outline-offset: 6px; }
 html[data-debug="1"] .master-column.master-content { outline: 2px dashed rgba(var(--ol-orange), .9); outline-offset: 6px; }
+html[data-debug="1"] .subhead-card { outline: 2px dashed rgba(var(--ol-blue), .9); outline-offset: 6px; }
+html[data-debug="1"] .subhead-card__arrow { outline: 2px dashed rgba(var(--ol-orange), .9); }
+html[data-debug="1"] .subhead-card__box { outline: 2px dashed rgba(var(--ol-green), .9); }
 
 /* Shared sections */
 .section--box{border:var(--section-border,0)}
@@ -978,6 +981,18 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   min-width: 0;
 }
 
+.master-column.master-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 1.8vw, 18px);
+}
+
+.master-column.master-resume .resume-card,
+.master-column.master-resume .subhead-card {
+  width: min(520px, 100%);
+}
+
 .resume-card {
   display: flex;
   flex-direction: column;
@@ -995,6 +1010,52 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   background: linear-gradient(180deg, color-mix(in srgb, var(--elev) 85%, transparent) 0%, var(--elev) 100%);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
   letter-spacing: -0.06em;
+}
+
+.subhead-card {
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--elev) 88%, transparent);
+  padding: clamp(10px, 1.8vw, 18px) clamp(14px, 2vw, 22px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  color: var(--fg);
+}
+
+.subhead-card__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 2vw, 18px);
+}
+
+.subhead-card__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--subhead-arrow);
+}
+
+.subhead-card__svg {
+  display: block;
+  width: clamp(60px, 10vw, 120px);
+  height: auto;
+  fill: currentColor;
+}
+
+.subhead-card__box {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2px, 0.5vw, 6px);
+  align-items: flex-start;
+}
+
+.subhead-card__line {
+  margin: 0;
+  white-space: nowrap;
+  font-family: "Inter Tight", system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 0.95;
+  font-size: clamp(18px, 2.4vw, 38px);
 }
 
 .resume-card__line {
