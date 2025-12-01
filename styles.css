@@ -997,6 +997,26 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   letter-spacing: -0.06em;
 }
 
+.subhead-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: clamp(4px, 1vw, 8px);
+  align-self: flex-start;
+  height: auto;
+  --resume-card-pad: clamp(14px, 2.4vw, 22px);
+  padding: var(--resume-card-pad);
+  position: relative;
+  margin-top: clamp(10px, 1.6vw, 18px);
+  border-radius: 14px;
+  border: 1.5px solid var(--border);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--elev) 90%, transparent) 0%, var(--elev) 100%);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.02em;
+}
+
 .resume-card__line {
   font-family: "Angkor", "Inter Tight", system-ui, sans-serif;
   --resume-line-min-size: 28px;
@@ -1009,6 +1029,25 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   letter-spacing: -0.06em;
   color: var(--fg);
   line-height: 1.05;
+}
+
+.subhead-element__line {
+  font-family: "Inter Tight", system-ui, sans-serif;
+  --subhead-line-min-size: 18px;
+  --subhead-line-max-size: 38px;
+  --subhead-line-size: clamp(var(--subhead-line-min-size), 3vw, 28px);
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  font-size: var(--subhead-line-size);
+  letter-spacing: -0.04em;
+  color: var(--fg);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.subhead-element__line--top {
+  padding-bottom: 0;
 }
 
 .resume-card__line--top {
