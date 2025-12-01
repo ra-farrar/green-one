@@ -1058,17 +1058,11 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 
 .subhead-element__line {
   font-family: "Inter Tight", system-ui, sans-serif;
-  --subhead-line-min-size: 18px;
-  --subhead-line-max-size: 38px;
-  --subhead-line-size: clamp(var(--subhead-line-min-size), 3vw, 28px);
   display: block;
   width: 100%;
   max-width: 100%;
   white-space: nowrap;
   text-wrap: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: var(--subhead-line-size);
   letter-spacing: -0.04em;
   color: var(--fg);
   line-height: 1.1;
@@ -1076,7 +1070,16 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 }
 
 .subhead-element__line--top {
+  --subhead-line-top-min: 18px;
+  --subhead-line-top-max: 36px;
+  font-size: clamp(var(--subhead-line-top-min), 3.4vw, var(--subhead-line-top-max));
   padding-bottom: 0;
+}
+
+.subhead-element__line--bottom {
+  --subhead-line-bottom-min: 16px;
+  --subhead-line-bottom-max: 30px;
+  font-size: clamp(var(--subhead-line-bottom-min), 3vw, var(--subhead-line-bottom-max));
 }
 
 .resume-card__line--top {
