@@ -1000,6 +1000,8 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 }
 
 .master-column.master-content {
+  display: grid;
+  grid-template-rows: 1fr auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1100,7 +1102,6 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   display: flex;
   gap: clamp(10px, 1.8vw, 16px);
   justify-content: center;
-  margin-top: auto;
   padding: clamp(10px, 1.8vw, 16px);
   position: sticky;
   bottom: 0;
