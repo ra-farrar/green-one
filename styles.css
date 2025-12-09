@@ -1003,6 +1003,7 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  height: 100%;
   position: relative;
   padding: clamp(8px, 1.6vw, 18px);
 }
