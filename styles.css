@@ -1067,6 +1067,12 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   container-type: inline-size;
 }
 
+@media (min-width: 768px) {
+  .subhead-element {
+    padding-block: 0;
+  }
+}
+
 .master-icons {
   align-items: center;
   align-self: flex-start;
