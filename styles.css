@@ -1079,9 +1079,9 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 }
 
 .trademark-logo {
-  width: clamp(56px, 8vw, 88px);
-  height: auto;
-  margin-top: clamp(10px, 1.6vw, 14px);
+  margin-top: 20px;
+  height: 36px;
+  width: auto;
 }
 
 .resume-card__line {
