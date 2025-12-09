@@ -1144,6 +1144,17 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
     min-height: 100vh;
     padding: clamp(16px, 5vw, 32px);
   }
+
+  .master-column.master-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .master-column.master-resume .trademark-element {
+    margin-top: auto;
+  }
 }
 
 /* ===== Debug legend (shown only in debug mode) ===== */
