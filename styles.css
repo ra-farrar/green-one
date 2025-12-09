@@ -1062,12 +1062,26 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 }
 
 .trademark-element__text {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4px, 1vw, 6px);
+  align-items: center;
   font-family: "Inter Tight", system-ui, sans-serif;
   font-size: var(--size-sm);
   line-height: 1.5;
   color: var(--fg-muted);
   text-align: center;
   letter-spacing: 0.01em;
+}
+
+.trademark-element__line {
+  display: block;
+}
+
+.trademark-logo {
+  width: clamp(56px, 8vw, 88px);
+  height: auto;
+  margin-top: clamp(10px, 1.6vw, 14px);
 }
 
 .resume-card__line {

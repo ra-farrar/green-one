@@ -197,11 +197,22 @@ refreshViewportMode();
 const root = document.documentElement;
 const toggle = document.getElementById('themeToggle');
 const footerLogo = document.getElementById('footerLogo');
+const trademarkLogo = document.getElementById('trademarkLogo');
 const THEME_KEY = 'theme-mode';
 
 function updateFooterLogo(mode) {
   if (!footerLogo) return;
   footerLogo.src = mode === 'dark' ? 'logo-white.svg' : 'logo-black.svg';
+}
+
+function updateTrademarkLogo(mode) {
+  if (!trademarkLogo) return;
+  const lightSrc = trademarkLogo.dataset.lightSrc || trademarkLogo.getAttribute('src');
+  const darkSrc = trademarkLogo.dataset.darkSrc || lightSrc;
+  const nextSrc = mode === 'dark' ? darkSrc : lightSrc;
+  if (nextSrc && trademarkLogo.getAttribute('src') !== nextSrc) {
+    trademarkLogo.setAttribute('src', nextSrc);
+  }
 }
 
 function updateContactIcons(mode) {
@@ -223,6 +234,7 @@ function applyTheme(mode) {
   root.setAttribute('data-theme', mode);
   if (toggle) toggle.textContent = mode.charAt(0).toUpperCase() + mode.slice(1);
   updateFooterLogo(mode);
+  updateTrademarkLogo(mode);
   updateContactIcons(mode);
 }
 function getCurrentTheme() {
