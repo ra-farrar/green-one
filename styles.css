@@ -986,6 +986,7 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   height: 100%;
   overflow-y: auto;
   padding: clamp(16px, 3vw, 28px);
+  padding-bottom: 0;
 }
 
 .master-grid {
