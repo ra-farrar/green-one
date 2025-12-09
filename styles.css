@@ -1007,6 +1007,7 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   height: 100%;
   position: relative;
   padding: clamp(8px, 1.6vw, 18px);
+  padding-bottom: 0;
 }
 
 .master-column.master-resume {
@@ -1103,6 +1104,7 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   justify-content: center;
   padding: clamp(10px, 1.8vw, 16px);
   position: sticky;
+  bottom: 0;
   bottom: clamp(8px, 1.6vw, 18px);
   margin-top: auto;
   justify-self: stretch;
