@@ -212,6 +212,8 @@ html[data-debug="1"] #timeline .timeline-column--axis { outline:2px dashed rgba(
 html[data-debug="1"] #timeline .timeline-column--role { outline:2px dashed rgba(var(--ol-orange),.75); }
 html[data-debug="1"] .master-section { outline: 2px dashed rgba(var(--ol-blue), .9); }
 html[data-debug="1"] .master-grid { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 4px; }
+html[data-debug="1"] .master-icons { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
+html[data-debug="1"] .master-icons .contact-icon-link { outline: 2px dashed rgba(var(--ol-orange), .8); outline-offset: 4px; }
 html[data-debug="1"] .resume-card { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
 html[data-debug="1"] .subhead-element { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
 html[data-debug="1"] .trademark-element { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
@@ -1070,7 +1072,7 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   border: 1.5px solid var(--border);
   border-radius: 12px;
   display: grid;
-  gap: clamp(10px, 2.2vw, 16px);
+  gap: clamp(6px, 1.6vw, 12px);
   grid-template-columns: repeat(4, auto);
   justify-content: center;
   margin-top: clamp(10px, 1.8vw, 20px);
@@ -1079,7 +1081,9 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 }
 
 .master-icons .contact-icon {
-  width: clamp(38px, 5vw, 54px);
+  height: 26px;
+  max-height: 26px;
+  width: auto;
 }
 
 .trademark-element {
