@@ -1063,6 +1063,25 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   container-type: inline-size;
 }
 
+.master-icons {
+  align-items: center;
+  align-self: flex-start;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--elev) 92%, transparent) 0%, var(--elev) 100%);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  display: grid;
+  gap: clamp(10px, 2.2vw, 16px);
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  margin-top: clamp(10px, 1.8vw, 20px);
+  padding: clamp(12px, 2vw, 18px);
+  width: var(--resume-panel-width);
+}
+
+.master-icons .contact-icon {
+  width: clamp(38px, 5vw, 54px);
+}
+
 .trademark-element {
   display: flex;
   flex-direction: column;
