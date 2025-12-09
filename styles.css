@@ -205,6 +205,7 @@ html[data-debug="1"] .master-section { outline: 2px dashed rgba(var(--ol-blue), 
 html[data-debug="1"] .master-grid { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 4px; }
 html[data-debug="1"] .resume-card { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
 html[data-debug="1"] .subhead-element { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
+html[data-debug="1"] .trademark-element { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
 html[data-debug="1"] .resume-card::before {
   content: "";
   position: absolute;
@@ -1042,6 +1043,31 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
   letter-spacing: -0.02em;
   container-type: inline-size;
+}
+
+.trademark-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  width: min(100%, 360px);
+  padding: clamp(12px, 2vw, 18px);
+  margin-top: clamp(14px, 2vw, 20px);
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--elev) 92%, transparent) 0%, var(--elev) 100%);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  container-type: inline-size;
+}
+
+.trademark-element__text {
+  font-family: "Inter Tight", system-ui, sans-serif;
+  font-size: var(--size-sm);
+  line-height: 1.5;
+  color: var(--fg-muted);
+  text-align: center;
+  letter-spacing: 0.01em;
 }
 
 .resume-card__line {
