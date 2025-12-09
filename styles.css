@@ -217,15 +217,21 @@ html[data-debug="1"] .master-icons .contact-icon-link { outline: 2px dashed rgba
 html[data-debug="1"] .resume-card { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
 html[data-debug="1"] .subhead-element { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
 html[data-debug="1"] .trademark-element { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
-html[data-debug="1"] .resume-card::before {
+html[data-debug="1"] .resume-card::before,
+html[data-debug="1"] .subhead-element::before,
+html[data-debug="1"] .master-icons::before,
+html[data-debug="1"] .trademark-element::before {
   content: "";
   position: absolute;
-  inset: var(--resume-card-pad);
+  inset: var(--debug-pad, var(--resume-card-pad));
   border: 2px dashed rgba(var(--ol-blue), .85);
   border-radius: 10px;
   pointer-events: none;
 }
-html[data-debug="1"] .resume-card::after {
+html[data-debug="1"] .resume-card::after,
+html[data-debug="1"] .subhead-element::after,
+html[data-debug="1"] .master-icons::after,
+html[data-debug="1"] .trademark-element::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -234,34 +240,10 @@ html[data-debug="1"] .resume-card::after {
   background: linear-gradient(
     90deg,
     rgba(var(--ol-purple), .18) 0%,
-    rgba(var(--ol-purple), .18) var(--resume-card-pad),
-    transparent var(--resume-card-pad),
-    transparent calc(100% - var(--resume-card-pad)),
-    rgba(var(--ol-purple), .18) calc(100% - var(--resume-card-pad)),
-    rgba(var(--ol-purple), .18) 100%
-  );
-}
-html[data-debug="1"] .subhead-element::before {
-  content: "";
-  position: absolute;
-  inset: var(--resume-card-pad);
-  border: 2px dashed rgba(var(--ol-blue), .85);
-  border-radius: 10px;
-  pointer-events: none;
-}
-html[data-debug="1"] .subhead-element::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  border-radius: inherit;
-  background: linear-gradient(
-    90deg,
-    rgba(var(--ol-purple), .18) 0%,
-    rgba(var(--ol-purple), .18) var(--resume-card-pad),
-    transparent var(--resume-card-pad),
-    transparent calc(100% - var(--resume-card-pad)),
-    rgba(var(--ol-purple), .18) calc(100% - var(--resume-card-pad)),
+    rgba(var(--ol-purple), .18) var(--debug-pad, var(--resume-card-pad)),
+    transparent var(--debug-pad, var(--resume-card-pad)),
+    transparent calc(100% - var(--debug-pad, var(--resume-card-pad))),
+    rgba(var(--ol-purple), .18) calc(100% - var(--debug-pad, var(--resume-card-pad))),
     rgba(var(--ol-purple), .18) 100%
   );
 }
@@ -1036,6 +1018,7 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   height: auto;
   width: var(--resume-panel-width);
   --resume-card-pad: clamp(18px, 3vw, 28px);
+  --debug-pad: var(--resume-card-pad);
   padding: var(--resume-card-pad);
   position: relative;
   border-radius: 16px;
@@ -1055,6 +1038,7 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   align-self: flex-start;
   height: auto;
   --resume-card-pad: clamp(14px, 2.4vw, 22px);
+  --debug-pad: var(--resume-card-pad);
   padding: var(--resume-card-pad);
   position: relative;
   margin-top: clamp(10px, 1.6vw, 18px);
@@ -1084,8 +1068,10 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   grid-template-columns: repeat(4, auto);
   justify-content: center;
   margin-top: clamp(10px, 1.8vw, 20px);
-  padding: clamp(12px, 2vw, 18px);
+  --debug-pad: clamp(12px, 2vw, 18px);
+  padding: var(--debug-pad);
   width: var(--resume-panel-width);
+  position: relative;
 }
 
 .master-icons .contact-icon {
@@ -1101,7 +1087,8 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   align-items: center;
   align-self: flex-start;
   width: var(--resume-panel-width);
-  padding: clamp(12px, 2vw, 18px);
+  --debug-pad: clamp(12px, 2vw, 18px);
+  padding: var(--debug-pad);
   margin-top: auto;
   padding-top: clamp(14px, 2vw, 20px);
   border-radius: 12px;
@@ -1109,6 +1096,7 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   background: transparent;
   box-shadow: none;
   container-type: inline-size;
+  position: relative;
 }
 
 .trademark-element__text {
