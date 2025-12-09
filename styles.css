@@ -86,7 +86,7 @@
   font-size: var(--size-sm);
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--bp-tablet)) {
   :root {
     --page-padding-inline: clamp(24px, 5vw, 48px);
   }
@@ -138,6 +138,15 @@ html[data-theme="dark"] {
 /* ===== Reset ===== */
 *,*::before,*::after{box-sizing:border-box}
 html,body{height:100%;margin:0;font-family:var(--font-sans);background:var(--bg);color:var(--fg);line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+@media (min-width: var(--bp-tablet)) {
+  body {
+    background-color: var(--bg);
+    background-image: url("./background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 input,button,textarea,select{font:inherit}
 p,h1,h2,h3,h4,h5,h6{margin:0}
