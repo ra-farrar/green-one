@@ -210,7 +210,9 @@ html[data-debug="1"] #timeline .timeline-item { outline:2px dashed rgba(var(--ol
 html[data-debug="1"] #timeline .timeline-column--date { outline:2px dashed rgba(var(--ol-green),.75); }
 html[data-debug="1"] #timeline .timeline-column--axis { outline:2px dashed rgba(var(--ol-purple),.75); }
 html[data-debug="1"] #timeline .timeline-column--role { outline:2px dashed rgba(var(--ol-orange),.75); }
+html[data-debug="1"] .master-shell { outline: 2px dashed rgba(var(--ol-blue), .85); outline-offset: 4px; }
 html[data-debug="1"] .master-section { outline: 2px dashed rgba(var(--ol-blue), .9); }
+html[data-debug="1"] .master-scroll { outline: 2px dashed rgba(var(--ol-purple), .9); outline-offset: 4px; }
 html[data-debug="1"] .master-grid { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 4px; }
 html[data-debug="1"] .master-icons { outline: 2px dashed rgba(var(--ol-green), .9); outline-offset: 6px; }
 html[data-debug="1"] .master-icons .contact-icon-link { outline: 2px dashed rgba(var(--ol-orange), .8); outline-offset: 4px; }
@@ -1002,9 +1004,6 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 .master-column.master-content {
   display: grid;
   grid-template-rows: 1fr auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   height: 100%;
   position: relative;
   padding: clamp(8px, 1.6vw, 18px);
@@ -1104,7 +1103,9 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   justify-content: center;
   padding: clamp(10px, 1.8vw, 16px);
   position: sticky;
-  bottom: 0;
+  bottom: clamp(8px, 1.6vw, 18px);
+  margin-top: auto;
+  justify-self: stretch;
   backdrop-filter: blur(10px);
 }
 
