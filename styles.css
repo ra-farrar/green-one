@@ -1021,6 +1021,8 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   flex-direction: column;
   align-items: flex-start;
   height: 100%;
+  border: 2px solid var(--border);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--elev) 85%, transparent) 0%, var(--elev) 100%);
 }
 
 .resume-card {
