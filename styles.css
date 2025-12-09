@@ -994,8 +994,10 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 .master-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  grid-template-rows: 1fr;
   gap: clamp(16px, 3vw, 28px);
   height: 100%;
+  align-items: stretch;
 }
 
 .master-column {
