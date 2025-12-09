@@ -227,6 +227,18 @@ function updateContactIcons(mode) {
   });
 }
 
+function updateDockIcons(mode) {
+  const icons = document.querySelectorAll('.master-dock__icon');
+  icons.forEach((icon) => {
+    const lightSrc = icon.dataset.lightSrc || icon.getAttribute('src');
+    const darkSrc = icon.dataset.darkSrc || lightSrc;
+    const nextSrc = mode === 'dark' ? darkSrc : lightSrc;
+    if (nextSrc && icon.getAttribute('src') !== nextSrc) {
+      icon.setAttribute('src', nextSrc);
+    }
+  });
+}
+
 // Detect system preference once (used if no saved choice)
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -236,6 +248,7 @@ function applyTheme(mode) {
   updateFooterLogo(mode);
   updateTrademarkLogo(mode);
   updateContactIcons(mode);
+  updateDockIcons(mode);
 }
 function getCurrentTheme() {
   const saved = localStorage.getItem(THEME_KEY);
