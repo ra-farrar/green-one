@@ -13,6 +13,7 @@
   --accent: #0f62fe;
   --accent-contrast: #ffffff;
   --subhead-arrow: #1600ff;
+  --master-resume-shadow: #000000;
 
   /* Typographic scale */
   --size-xs: 0.8125rem;
@@ -122,17 +123,18 @@
     --border: #2a2e34;
     --accent: #8ab4ff;
     --accent-contrast: #0b0b0c;
+    --master-resume-shadow: #ffffff;
   }
 }
 
 /* Manual theme overrides (used by script toggle) */
 html[data-theme="light"] {
   --bg: #ffffff; --fg: #0b0b0c; --muted: #f2f3f5; --fg-muted: #5a5f66;
-  --elev: #ffffff; --border: #e6e7eb; --accent: #0f62fe; --accent-contrast: #ffffff;
+  --elev: #ffffff; --border: #e6e7eb; --accent: #0f62fe; --accent-contrast: #ffffff; --master-resume-shadow: #000000;
 }
 html[data-theme="dark"] {
   --bg: #0b0b0c; --fg: #f5f6f7; --muted: #17181b; --fg-muted: #a8adb4;
-  --elev: #121316; --border: #2a2e34; --accent: #8ab4ff; --accent-contrast: #0b0b0c;
+  --elev: #121316; --border: #2a2e34; --accent: #8ab4ff; --accent-contrast: #0b0b0c; --master-resume-shadow: #ffffff;
 }
 
 /* ===== Reset ===== */
@@ -1009,7 +1011,11 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 
 @media (min-width: 768px) {
   .master-column.master-resume {
-    border: 3px solid #1600ff;
+    border: 4px solid #1600ff;
+    box-shadow:
+      8px 0 0 0 var(--master-resume-shadow),
+      0 10px 0 0 var(--master-resume-shadow),
+      12px 12px 0 0 var(--master-resume-shadow);
   }
 }
 
