@@ -1012,6 +1012,10 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
 @media (min-width: 768px) {
   .master-column.master-resume {
     border: 4px solid #1600ff;
+    box-shadow:
+      8px 0 0 0 var(--master-resume-shadow),
+      0 10px 0 0 var(--master-resume-shadow),
+      12px 12px 0 0 var(--master-resume-shadow);
     box-shadow: 0 12px 0 0 var(--master-resume-shadow);
   }
 }
