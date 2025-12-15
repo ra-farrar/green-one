@@ -1019,6 +1019,8 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
       14px 0 0 0 var(--master-resume-shadow),
       0 16px 0 0 var(--master-resume-shadow),
       16px 16px 0 0 var(--master-resume-shadow);
+      12px 12px 0 0 var(--master-resume-shadow);
+    box-shadow: 0 12px 0 0 var(--master-resume-shadow);
   }
 }
 
