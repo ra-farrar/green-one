@@ -1007,6 +1007,12 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   background: linear-gradient(180deg, color-mix(in srgb, var(--elev) 85%, transparent) 0%, var(--elev) 100%);
 }
 
+@media (min-width: 768px) {
+  .master-column.master-resume {
+    border: 3px solid #1600ff;
+  }
+}
+
 .resume-card {
   display: flex;
   flex-direction: column;
