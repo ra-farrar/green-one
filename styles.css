@@ -1074,10 +1074,23 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   position: relative;
 }
 
+.master-icons .contact-icon-link {
+  color: var(--fg);
+  cursor: pointer;
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.master-icons .contact-icon-link:hover,
+.master-icons .contact-icon-link:focus-visible,
+.master-icons .contact-icon-link.is-active {
+  color: #1600ff;
+}
+
 .master-icons .contact-icon {
   height: 36px;
   max-height: 36px;
-  width: auto;
+  width: 36px;
+  fill: currentColor;
 }
 
 .trademark-element {

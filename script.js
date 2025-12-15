@@ -256,6 +256,31 @@ if (toggle) {
   applyTheme(getCurrentTheme());
 }
 
+function initMasterIconSelection() {
+  const masterIconButtons = Array.from(document.querySelectorAll('.master-icons .contact-icon-link'));
+  if (!masterIconButtons.length) return;
+
+  let activeButton = masterIconButtons.find((button) => button.classList.contains('is-active')) || null;
+
+  masterIconButtons.forEach((button) => {
+    button.setAttribute('aria-pressed', button === activeButton ? 'true' : 'false');
+    button.addEventListener('click', () => {
+      if (activeButton === button) return;
+
+      if (activeButton) {
+        activeButton.classList.remove('is-active');
+        activeButton.setAttribute('aria-pressed', 'false');
+      }
+
+      button.classList.add('is-active');
+      button.setAttribute('aria-pressed', 'true');
+      activeButton = button;
+    });
+  });
+}
+
+initMasterIconSelection();
+
 // ========== Placeholder Mounts ==========
 function mountAnimationDemo() {
   const container = document.getElementById('animationContainer');
