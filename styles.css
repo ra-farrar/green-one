@@ -1013,14 +1013,9 @@ font-size='34' font-weight='700' fill='black'>◓</text></svg>") 24 24, auto;
   .master-column.master-resume {
     border: 4px solid #1600ff;
     box-shadow:
-      8px 0 0 0 var(--master-resume-shadow),
-      0 10px 0 0 var(--master-resume-shadow),
-      10px 10px 0 0 var(--master-resume-shadow),
-      14px 0 0 0 var(--master-resume-shadow),
-      0 16px 0 0 var(--master-resume-shadow),
-      16px 16px 0 0 var(--master-resume-shadow);
-      12px 12px 0 0 var(--master-resume-shadow);
-    box-shadow: 0 12px 0 0 var(--master-resume-shadow);
+      8px 10px 0 0 var(--master-resume-shadow),
+      14px 18px 0 0 color-mix(in srgb, var(--master-resume-shadow) 85%, transparent),
+      20px 26px 18px 0 color-mix(in srgb, var(--master-resume-shadow) 55%, transparent);
   }
 }
 
